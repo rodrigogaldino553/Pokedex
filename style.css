@@ -1,4 +1,140 @@
-body{
+#navbar{
+  background: #FFC412;
+}
+
+#navbar #search-btn{
+  height: 48px;
+  background: #2B76BA;
+  color:white;
+  font-weight: bold;
+  border: 1px solid #2B76BA;
+  transition: all 400ms;
+  outline: none;
+}
+
+#navbar #search-btn:hover{
+  background: white;
+  color:#2B76BA;
+  font-weight: bolder;
+  border: 1px solid #2B76BA;
+}
+
+#navbar #search-btn:focus{
+  outline-color: blueviolet;
+  border: 0;
+}
+
+#navbar #search-input{
+  height: 48px;
+}
+
+.poke-card{
+  /*width: 70px;
+  height: 300px;*/
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: black 2px 2px 5px;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+	color: #222;
+  background: rgba(0, 255, 255, 0.438);
+  margin: 15px;
+}
+
+.poke-card img{
+  width: 100px;
+  height: 150px;
+  z-index: 2;
+  
+}
+.poke-card::after {
+	content: "";
+  display: block;
+  width: 50%;
+  height: 45%;
+  border-radius: 100%;
+  background-color: #fff;
+  opacity: .7;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+}
+
+
+#container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 5px;
+	padding-inline-start: 0;
+}
+
+
+/*elements class*/
+.steel {
+	background-color: #f4f4f4;
+}
+
+.fire {
+	background-color: #FDDFDF;
+}
+
+.grass {
+	background-color: #DEFDE0;
+}
+
+.electric {
+	background-color: #FCF7DE;
+}
+
+.water, .ice {
+	background-color: #DEF3FD;
+}
+
+.ground {
+	background-color: #f4e7da;
+}
+
+.rock {
+	background-color: #d5d5d4;
+}
+
+.fairy {
+	background-color: #fceaff;
+}
+
+.poison {
+	background-color: #98d7a5;
+}
+
+.bug {
+	background-color: #f8d5a3;
+}
+
+.dragon {
+	background-color: #97b3e6;
+}
+
+.psychic {
+	background-color: #eaeda1;
+}
+
+.flying {
+	background-color: #F5F5F5;
+}
+
+.fighting {
+	background-color: #E6E0D4;
+}
+
+.normal {
+	background-color: #F5F5F5;
+}
+
+
+/*body{
   background: #FFC412;
   display: flex;
   flex-direction: column;
@@ -97,7 +233,7 @@ span{
   .pokemon-info{
     border-radius: 0 0 8px 8px;
   }
-}
+}*/
 
 
 
