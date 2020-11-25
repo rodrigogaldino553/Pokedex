@@ -68,7 +68,7 @@ async function start_app() {
 }
 
 document.addEventListener("keydown", event => {
-  if (event.key == 'Enter') {
+  if (event.key == 'Enter' && loaded) {
     event.preventDefault()
     poke_name = search_input.value.toLowerCase()
     start_app(poke_name)
