@@ -64,13 +64,20 @@
 
 
 #container{
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 5px;
-	padding-inline-start: 0;
+  padding-inline-start: 0;
+  padding-left: 20px;
 }
 
+#alert{
+  position: fixed;
+  width: 100%;
+  top:92%;
+  z-index: 10;
+  transition: all 500ms;
+}
 
 /*elements class*/
 .steel {
@@ -132,6 +139,39 @@
 .normal {
 	background-color: #F5F5F5;
 }
+
+.hide{
+  display: none;
+}
+
+
+@media(max-width:700px){
+  #container{
+    width: max-content;
+  }
+
+  #container, #navbar, .pokemon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #form{
+    display: flex;
+    flex-direction: row;
+  }
+
+  #form #search-input{
+    width: 170px;
+  }
+
+  #alert{
+    top:93%;
+    z-index: 10;
+  }
+}
+
 
 
 /*body{

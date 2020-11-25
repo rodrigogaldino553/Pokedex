@@ -3,13 +3,15 @@ const base_url = 'https://pokeapi.co/api/v2/pokemon/'
 
 const search_input = get_element("#search-input")
 const search_button = get_element("#search-btn")
+const form = get_element('#form')
 const container = get_element("#container")
 const search_container = get_element('.pokemon')
 const erro_message = get_element(".error")
 
 var poke_name;
 var card;
-var c = 150
+var c = 50
+var loaded = false
 
 
 
@@ -27,7 +29,7 @@ async function request_poke(name) {
    .catch(err => {
      alert(`${poke_name} not found!`)})*/
 
-  //com async awat fica assim
+  //com async await fica assim
 
   return await fetch(base_url + name).then(response => response.json())
 
@@ -65,42 +67,80 @@ function create_card(pokemon) {
 
 async function start_app() {
   container.innerHTML = ''
-  search_container.innerHTML = `<h3>Show results for "${poke_name}":</h3>`
-  //try {
+  search_container.innerHTML = `<h3>Searching "${poke_name}"...`
+  try {
     await request_poke(poke_name).then((response) => {
       setTimeout(function () {
+        search_container.innerHTML = `<h3>Showing results for "${poke_name}":</h3>`
         search_container.innerHTML += create_card(response)
-
       }, 2000)
     })
-  /*} catch (error) {
-    container.innerHTML = `Error! not was possible get ${poke_name}`
-  }*/
+  } catch (error) {
+    showAlert(`Error! not was possible get "${poke_name}"`, 'alert-danger')
+    search_container.innerHTML = ''
+    container.innerHTML = `<h3>Error! not was possible get "${poke_name}"</h3>`
+  }
 }
 
-search_button.addEventListener('click', event => {
-  event.preventDefault()
-  poke_name = search_input.value.toLowerCase()
-  start_app(poke_name)
+document.addEventListener("keydown", event => {
+  if (event.key == 'Enter') {
+    event.preventDefault()
+    poke_name = search_input.value.toLowerCase()
+    start_app(poke_name)
 
-  container.classList.add('fade')
-  setTimeout(() => {
-    container.classList.remove('fade')
-  }, 3000)
+    container.classList.add('fade')
+    setTimeout(() => {
+      container.classList.remove('fade')
+    }, 3000)
+  }
 })
+
+
+search_button.addEventListener('click', event => {
+  if (loaded) {
+    event.preventDefault()
+    poke_name = search_input.value.toLowerCase()
+    start_app(poke_name)
+
+    container.classList.add('fade')
+    setTimeout(() => {
+      container.classList.remove('fade')
+    }, 3000)
+  } else {
+    showAlert('Wait page load to search', 'alert-warning')
+  }
+})
+
+
+//showAlert('Hello world', 'alert-danger')
+function showAlert(text, alertClass) {
+  const alertField = document.querySelector('#alert')
+  alertField.classList.remove('hide')
+  alertField.classList.add(alertClass)
+
+  alertField.innerHTML = text
+  setTimeout(() => {
+    alertField.classList.add('hide')
+    alertField.classList.add(alertClass)
+  }, 5000)
+}
 
 
 async function loadCards() {
   let poke = 1
-  while(c > 0) {
+  while (c > 0) {
     await request_poke(poke).then(function (response) {
       container.innerHTML += create_card(response)
     })
     c--
-    poke ++
+    poke++
   }
+  loaded = true
 }
 
-loadCards()
-
+try {
+  loadCards()
+} catch (error) {
+  showAlert('Error!! was not posible to load cards', 'alert-danger')
+}
 

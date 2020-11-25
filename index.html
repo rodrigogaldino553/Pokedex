@@ -22,12 +22,14 @@
   <nav class="navbar navbar-light" id="navbar" style="margin-bottom: 15px;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg"
       alt="Pokemon logo">
-    <form class="form-inline">
+    <form class="form-inline" id="form">
       <input class="form-control mr-sm-2" id="search-input" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" id="search-btn" type="button">Search</button>
+      <button class="btn btn-outline-success my-2 my-sm-0" id="search-btn" onclick="search()" type="button">Search</button>
     </form>
   </nav>
-
+  <div class="alert hide" id="alert" role="alert">
+    Hello World!
+  </div>
 
   <!--
   <main class="container">
@@ -41,7 +43,7 @@
   </main>
     </div-->
   
-    <div id="container" class="container">
+    <div id="container" class="container-fluid">
       <!-- Content here -->
     </div>
   <div>
@@ -50,6 +52,7 @@
     </section>
   </div>
 
+  
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
