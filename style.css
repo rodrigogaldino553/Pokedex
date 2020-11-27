@@ -1,5 +1,8 @@
 #navbar{
   background: #FFC412;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
 }
 
 #navbar #search-btn{
@@ -49,6 +52,7 @@
   z-index: 2;
   
 }
+
 .poke-card::after {
 	content: "";
   display: block;
@@ -64,6 +68,8 @@
 
 
 #container{
+  position: absolute;
+  top:25%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 5px;
@@ -78,6 +84,51 @@
   z-index: 10;
   transition: all 500ms;
 }
+
+.pokemon{
+  background: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top:25%;
+  z-index: 8;
+  
+}
+
+
+@media(max-width:700px){
+  #container{
+    width: max-content;
+  }
+
+  #container, #navbar, .pokemon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #form{
+    display: flex;
+    flex-direction: row;
+  }
+
+  #form #search-input{
+    width: 170px;
+  }
+
+  .pokemon{
+    min-width: fit-content;
+    min-height: max-content;
+    padding: 30px;
+  }
+
+  #alert{
+    top:93%;
+    z-index: 100;
+  }
+}
+
 
 /*elements class*/
 .steel {
@@ -144,32 +195,5 @@
   display: none;
 }
 
-
-@media(max-width:700px){
-  #container{
-    width: max-content;
-  }
-
-  #container, #navbar, .pokemon{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #form{
-    display: flex;
-    flex-direction: row;
-  }
-
-  #form #search-input{
-    width: 170px;
-  }
-
-  #alert{
-    top:93%;
-    z-index: 10;
-  }
-}
 
 
