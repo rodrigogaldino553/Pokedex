@@ -32,8 +32,6 @@
 }
 
 .poke-card{
-  /*width: 70px;
-  height: 300px;*/
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -41,7 +39,7 @@
   align-items: center;
   text-align: center;
   padding: 10px;
-	color: #222;
+  color: #222;
   background: rgba(0, 255, 255, 0.438);
   margin: 15px;
 }
@@ -54,7 +52,7 @@
 }
 
 .poke-card::after {
-	content: "";
+  content: "";
   display: block;
   width: 50%;
   height: 45%;
@@ -99,6 +97,7 @@
 @media(max-width:700px){
   #container{
     width: max-content;
+    top:30%;
   }
 
   #container, #navbar, .pokemon{
