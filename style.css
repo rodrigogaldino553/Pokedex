@@ -120,6 +120,7 @@
     min-width: fit-content;
     min-height: max-content;
     padding: 30px;
+    top:30%;
   }
 
   #alert{
