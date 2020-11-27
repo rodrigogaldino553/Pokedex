@@ -8,6 +8,7 @@ const container = get_element("#container")
 const search_container = get_element('.pokemon')
 const erro_message = get_element(".error")
 
+
 var poke_name;
 var card;
 var c = 50
@@ -68,7 +69,9 @@ async function start_app() {
 }
 
 document.addEventListener("keydown", event => {
-  if (event.key == 'Enter' && loaded) {
+  if (event.key == 'Enter') {
+    container.style.display = 'none'
+
     event.preventDefault()
     poke_name = search_input.value.toLowerCase()
     start_app(poke_name)
@@ -82,18 +85,13 @@ document.addEventListener("keydown", event => {
 
 
 search_button.addEventListener('click', event => {
-  if (loaded) {
+    container.style.display = 'none'
+
     event.preventDefault()
     poke_name = search_input.value.toLowerCase()
     start_app(poke_name)
 
-    container.classList.add('fade')
-    setTimeout(() => {
-      container.classList.remove('fade')
-    }, 3000)
-  } else {
-    showAlert('Wait page load to search', 'alert-warning')
-  }
+
 })
 
 
