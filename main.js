@@ -63,13 +63,15 @@ async function start_app() {
     })
   } catch (error) {
     showAlert(`Error! not was possible get "${poke_name}"`, 'alert-danger')
-    search_container.innerHTML = ''
-    container.innerHTML = `<h3>Error! can't get "${poke_name}"</h3>`
+    search_container.innerHTML = `<h3>Error! can't get "${poke_name}"</h3>`
+    //container.innerHTML = `<h3>Error! can't get "${poke_name}"</h3>`
   }
 }
 
 document.addEventListener("keydown", event => {
-  if (event.key == 'Enter' && loaded) {
+  if (event.key == 'Enter') {
+    search_container.classList.remove('hide')
+    container.style.display = 'none'
     event.preventDefault()
     poke_name = search_input.value.toLowerCase()
     start_app(poke_name)
@@ -83,22 +85,14 @@ document.addEventListener("keydown", event => {
 container.classList.add('.hide')
 
 search_button.addEventListener('click', event => {
-  //if (!loaded) {
     search_container.classList.remove('hide')
     container.style.display = 'none'
     click = true
     event.preventDefault()
     poke_name = search_input.value.toLowerCase()
-    //container.style = 
     start_app(poke_name)
 
-    //container.classList.add('hide')
-    /*setTimeout(() => {
-      container.classList.remove('fade')
-    }, 3000)*/
-  /*} else {
-    showAlert('Wait page load to search', 'alert-warning')
-  }*/
+
 })
 
 
