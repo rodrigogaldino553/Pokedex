@@ -24,130 +24,46 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-<!-- PROJECT LOGO -->
-<br />
+<h1 align="center">
+    <img alt="Happy" title="Happy" src="public/images/logo.svg" />
+</h1>
 
-  <h1 align="center">Is Connected</h1>
+<br>
 
-  <p align="center">
-    Alert your connection status!
-    <br />
-    <a href="https://github.com/rodrigogaldino553/is-connected"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/rodrigogaldino553/is-connected/issues">Report Bug</a>
-    <a href="https://github.com/rodrigogaldino553/is-connected/issues">Request Feature</a>
-  </p>
+<p align="center">
+  <img alt="Happy" src="public/images/happy.png" width="100%">
 </p>
 
+## 🚀 Technology
+
+This project was developed using the:
+
+- [Node.js](https://nodejs.org/en/)
+- [Express](https://expressjs.com/pt-br/)
+- [SQLite](https://www.sqlite.org/index.html)
+- [handlebars](https://handlebarsjs.com/)
+
+## 💻 Project
+
+Happy is a project that aims to facilitate visits to orphanages close to you 💜
 
 
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
-</details>
+This is a project developed during the **[Next Level Week](https://nextlevelweek.com/)**, performed by **[@Rocketseat](https://github.com/Rocketseat)** during the 12th to 18th of October 2020.
 
+## 🔖 Layout
 
+You can view the layout of the project through the links below:
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+- [Layout Web](https://www.figma.com/file/mDEbnoojksG4w8sOxmudh3/Happy-Web?node-id=0%3A1) 
+- [Layout Mobile](https://www.figma.com/file/X27FfVxAgy9f5IFa7ONlph/Happy-Mobile?node-id=0%3A1) 
 
+Remembering that you need to have an account at [Figma](http://figma.com/) to access it.
 
-Script to check the internet connection, and alert you about it
+## 📝 Licence
 
-*It can run on all devices with python, you can put it in a IoT device, or run it at your terminal on your PC, or smartphone<br>
-*It check your internet connection and alert you when it lost or stay unavailable<br>
-*It alert you when it get back<br>
-*It use sound effects to alert you, and inform you about your connection
+This project is under the **APACHE** license.
 
-
-### Built With
-
-* [Python](https://python.org)
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-*python 3.6+
-
-### Installation
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/rodrigogaldino553/is-connected.git
-   ```
-2. Install requests and playsound
-  * requests
-    ```sh
-       python -m pip install requests
-    ```
-  * playsound
-    ```sh
-       python -m pip install playsound
-    ```
-3. Just run it with python is-connected/main.py
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-It will show in your terminal the status of your internet connetion
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/rodrigogaldino553/is-connected/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
+---
 
 <!-- CONTACT -->
 ## Contact
