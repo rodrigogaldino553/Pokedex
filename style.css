@@ -89,6 +89,9 @@
   left: 50%;
   transform: translateX(-50%);
   top:25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   z-index: 8;
   
 }
