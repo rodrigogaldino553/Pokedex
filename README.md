@@ -49,12 +49,6 @@ Pokedex it's a website to search information about your favorites pokemons 💜
 This is a project developed with the goal to learn more about web technologies, my first website using bootstrap
 
 
-## 📝 Licence
-
-This project is under the **APACHE** license.
-
----
-
 <!-- CONTACT -->
 ## Contact
 
@@ -87,8 +81,6 @@ Project Link: [https://github.com/rodrigogaldino553/is-connected](https://github
 [stars-url]: https://github.com/rodrigogaldino553/stargazers
 [issues-shield]: https://img.shields.io/github/issues/rodrigogaldino553/pokedex.svg?style=for-the-badge
 [issues-url]: https://github.com/rodrigogaldino553/issues
-[license-shield]: https://img.shields.io/github/license/rodrigogaldino553/pokedex.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/rodrigogaldino553/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/rodrigogaldino553
 
