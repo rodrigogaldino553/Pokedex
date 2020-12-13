@@ -49,7 +49,7 @@ This project was developed using the:
 Pokedex it's a website to search information about your favorites pokemons 💜
 
 
-This is a project developed with the go to learn more about web technologies, my first website using bootstrap
+This is a project developed with the goal to learn more about web technologies, my first website using bootstrap
 
 
 ## 📝 Licence
