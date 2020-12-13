@@ -30,6 +30,14 @@
 <br>
 
 
+## 💻 Project
+
+Pokedex it's a website to search information about your favorites pokemons 💜
+
+
+This is a project developed with the goal to learn more about web technologies, my first website using bootstrap
+
+
 ## 🚀 Technology
 
 This project was developed using the:
@@ -38,14 +46,6 @@ This project was developed using the:
 - [PokeAPI](https://pokeapi.co/)
 - [Pokeres Bastionbot](https://pokeres.bastionbot.org/)
 - [JavaScript](https://www.javascript.com/)
-
-
-## 💻 Project
-
-Pokedex it's a website to search information about your favorites pokemons 💜
-
-
-This is a project developed with the goal to learn more about web technologies, my first website using bootstrap
 
 
 <!-- CONTACT -->
