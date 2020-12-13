@@ -25,14 +25,11 @@
 
 
 <h1 align="center">
-    <img alt="Happy" title="Happy" src="public/images/logo.svg" />
+    Pokedex
 </h1>
 
 <br>
 
-<p align="center">
-  <img alt="Happy" src="public/images/happy.png" width="100%">
-</p>
 
 ## 🚀 Technology
 
@@ -91,7 +88,7 @@ Project Link: [https://github.com/rodrigogaldino553/is-connected](https://github
 [issues-shield]: https://img.shields.io/github/issues/rodrigogaldino553/pokedex.svg?style=for-the-badge
 [issues-url]: https://github.com/rodrigogaldino553/issues
 [license-shield]: https://img.shields.io/github/license/rodrigogaldino553/pokedex.svg?style=for-the-badge
-[license-url]: https://github.com/rodrigogaldino553/blob/master/LICENSE.txt
+[license-url]: https://github.com/othneildrew/rodrigogaldino553/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/rodrigogaldino553
 
