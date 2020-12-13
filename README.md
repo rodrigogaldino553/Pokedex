@@ -38,10 +38,10 @@
 
 This project was developed using the:
 
-- [JavaScript] ()
-- [Bootstrap] ()
-- [PokeAPI] ()
-- [HTML] ()
+- [Bootstrap](https://getbootstrap.com/)
+- [PokeAPI](https://pokeapi.co/)
+- [Pokeres Bastionbot](https://pokeres.bastionbot.org/)
+- [JavaScript](https://www.javascript.com/)
 
 
 ## 💻 Project
