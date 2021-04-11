@@ -26,7 +26,7 @@
 <h1 align="center">
     Pokedex
 </h1>
-
+<img src="https://rodrigogaldino553.github.io/portifolio/assets/projects-thumb/pokedex.png">
 <br>
 
 
@@ -57,7 +57,7 @@ Intagram - [@rgr205](https://instagram.com/rgr205) <br>
 e-mail - galdinorodrigo553@protonmail.com<br>
 LinkedIn - www.linkedin.com/in/rodrigogaldino553
 
-Project Link: [https://github.com/rodrigogaldino553/is-connected](https://github.com/rodrigogaldino553/pokedex)
+Project Link: [https://github.com/rodrigogaldino553/pokedex](https://github.com/rodrigogaldino553/pokedex)
 
 
 
