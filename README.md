@@ -26,7 +26,7 @@
 <h1 align="center">
     Pokedex
 </h1>
-<img src="https://rodrigogaldino553.github.io/portifolio/assets/projects-thumb/pokedex.png">
+<img src="https://rodrigogaldino553.github.io/portifolio/assets/projects-thumb/pokedex.jpeg">
 <br>
 
 
