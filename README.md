@@ -57,7 +57,7 @@ Intagram - [@rgr205](https://instagram.com/rgr205) <br>
 e-mail - galdinorodrigo553@protonmail.com<br>
 LinkedIn - www.linkedin.com/in/rodrigogaldino553
 
-<h2>Project Link: [https://github.com/rodrigogaldino553/pokedex](https://github.com/rodrigogaldino553/pokedex) </h5>
+<h4>Project Link:</h4> [https://github.com/rodrigogaldino553/pokedex](https://github.com/rodrigogaldino553/pokedex)
 
 
 
