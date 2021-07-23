@@ -55,7 +55,7 @@ This project was developed using the:
 
 <h5>Rodrigo Galdino</h5>
 
-Intagram - [@rodrigo_onrails](https://instagram.com/rdrigo_onrails) <br>
+Intagram - [@rodrigo_onrails](https://instagram.com/rodrigo_onrails) <br>
 e-mail - galdinorodrigo553@protonmail.com<br>
 LinkedIn - www.linkedin.com/in/rodrigogaldino553
 
