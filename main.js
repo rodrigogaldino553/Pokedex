@@ -38,7 +38,7 @@ async function request_poke(name) {
 
 function create_card(pokemon) {
   card = `<div class="card poke-card ${pokemon.types[0].type.name.toString()}" style="width: 18rem;">
-  <img src="https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png" alt="Sprite of ${pokemon.name}" class="card-img-top">
+  <img src="${pokemon.sprites.front_shiny}" alt="Sprite of ${pokemon.name}" class="card-img-top">
   <div class="card-body">
   <h5 class="card-title">${pokemon.id}.${pokemon.name}</h5>
   <h6 class="card-title">${pokemon.types.map(item => ' ' + item.type.name).toString()}</h6>
